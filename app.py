@@ -11,7 +11,7 @@ def load_model():
     
     # Check if the file exists locally. If not, download it from Google Drive.
     if not os.path.exists(model_path):
-        # Your specific Google Drive File ID
+        # Google Drive File ID
         file_id = '1EqynfWp6UJrcSWGsbu7QynDkphNLN8ko'
         url = f'https://drive.google.com/uc?id={file_id}'
         gdown.download(url, model_path, quiet=False)
